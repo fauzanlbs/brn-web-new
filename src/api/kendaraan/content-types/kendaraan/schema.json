@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kendaraans",
+  "info": {
+    "singularName": "kendaraan",
+    "pluralName": "kendaraans",
+    "displayName": "Kendaraan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "kendaraans"
+    },
+    "merk": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "tipe": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "stnk_no": {
+      "type": "string"
+    },
+    "plat_no": {
+      "type": "string"
+    },
+    "rangka_no": {
+      "type": "string"
+    },
+    "mesin_no": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

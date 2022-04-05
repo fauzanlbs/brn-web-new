@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokos",
+  "info": {
+    "singularName": "toko",
+    "pluralName": "tokos",
+    "displayName": "Toko",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "province": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  }
+}

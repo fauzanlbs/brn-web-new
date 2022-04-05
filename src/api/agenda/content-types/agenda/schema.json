@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendas",
+  "info": {
+    "singularName": "agenda",
+    "pluralName": "agendas",
+    "displayName": "Agenda"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "location": {
+      "type": "text"
+    },
+    "qrcode": {
+      "type": "uid"
+    }
+  }
+}

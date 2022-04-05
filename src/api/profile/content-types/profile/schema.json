@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "ktp_no": {
+      "type": "string"
+    },
+    "shirt_size": {
+      "type": "string"
+    },
+    "rental_name": {
+      "type": "string"
+    },
+    "rental_address": {
+      "type": "text"
+    },
+    "rental_lat": {
+      "type": "decimal"
+    },
+    "rental_long": {
+      "type": "decimal"
+    },
+    "rental_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "rental_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "siup_no": {
+      "type": "string"
+    },
+    "siup_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

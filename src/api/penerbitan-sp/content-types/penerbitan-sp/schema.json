@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "penerbitan_sps",
+  "info": {
+    "singularName": "penerbitan-sp",
+    "pluralName": "penerbitan-sps",
+    "displayName": "Penerbitan SP"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

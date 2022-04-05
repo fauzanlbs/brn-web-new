@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surat_peringatans",
+  "info": {
+    "singularName": "surat-peringatan",
+    "pluralName": "surat-peringatans",
+    "displayName": "Surat Peringatan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jenis": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaksis",
+  "info": {
+    "singularName": "transaksi",
+    "pluralName": "transaksis",
+    "displayName": "Transaksi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "shipping_address": {
+      "type": "text"
+    },
+    "province": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "ongkir": {
+      "type": "biginteger"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "transaksi_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaksi-detail.transaksi-detail",
+      "mappedBy": "transaksi"
+    }
+  }
+}
