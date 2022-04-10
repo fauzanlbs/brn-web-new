@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blacklists",
+  "info": {
+    "singularName": "blacklist",
+    "pluralName": "blacklists",
+    "displayName": "Blacklist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rental": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "pelapor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "name_penyewa": {
+      "type": "string"
+    },
+    "phone_penyewa": {
+      "type": "biginteger"
+    },
+    "no_ktp_penyewa": {
+      "type": "string"
+    },
+    "image_ktp_penyewa": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

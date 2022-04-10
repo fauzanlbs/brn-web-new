@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donasis",
+  "info": {
+    "singularName": "donasi",
+    "pluralName": "donasis",
+    "displayName": "Donasi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "target": {
+      "type": "biginteger"
+    },
+    "terkumpul": {
+      "type": "biginteger"
+    }
+  }
+}

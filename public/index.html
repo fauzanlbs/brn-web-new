@@ -12,12 +12,65 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background-image: url('https://buserrentcarnasional.id/wp-content/uploads/2019/01/BBOC.jpg');
+      height: 100%;
+      background-position: center;
+
+      color: white;
+      font-family: "Futura", Futura, monospace;
+      font-size: 25px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+
+    .bottomleft {
+      position: absolute;
+      bottom: 10;
+      left: 16px;
+      margin: 10px;
+    }
+
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="valign-wrapper valign center">
-    <h5>BRN REST API</h5>
-    <a href="https://www.brnjuara.com">BRN Web Admin</a>
+  <div class="bgimg">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <div class="middle">
+      <h1></h1>
+      <hr>
+      <p></p>
+    </div>
+    <div class="bottomleft">
+      <a class="waves-effect waves-light btn" href="www.brnjuara.com/admin">Web admin</a>
+    </div>
   </div>
 </body>
 
