@@ -53,7 +53,7 @@ export default {
         'Auth.form.email.placeholder': 'contoh: budi@brnjuara.com'
       },
       en: {
-        'Auth.form.welcome.subtitle': 'Lets login',
+        'Auth.form.welcome.subtitle': 'Please login',
         'Auth.form.welcome.title': 'BRN Application',
         'app.components.HomePage.welcome.again': 'BRN Web Admin',
         'app.components.HomePage.button.blog': ' ',
