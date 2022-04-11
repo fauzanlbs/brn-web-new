@@ -66,11 +66,62 @@
     "is_old_member": {
       "type": "boolean"
     },
-    "kendaraans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::kendaraan.kendaraan",
-      "mappedBy": "user"
+    "phone": {
+      "type": "biginteger"
+    },
+    "ktp_no": {
+      "type": "string"
+    },
+    "shirt_size": {
+      "type": "string"
+    },
+    "rental_name": {
+      "type": "string"
+    },
+    "rental_address": {
+      "type": "text"
+    },
+    "rental_lat": {
+      "type": "decimal"
+    },
+    "rental_long": {
+      "type": "decimal"
+    },
+    "rental_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rental_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "siup_no": {
+      "type": "string"
+    },
+    "siup_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
