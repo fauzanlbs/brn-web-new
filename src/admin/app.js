@@ -49,7 +49,8 @@ export default {
         'app.components.HomePage.welcome.again': 'BRN Web Admin',
         'app.components.HomePage.button.blog': ' ',
         'app.components.HomePage.welcomeBlock.content.again': 'Selamat datang kembali',
-        'app.components.LeftMenu.navbrand.title': 'BRN Admin'
+        'app.components.LeftMenu.navbrand.title': 'BRN Admin',
+        'Auth.form.email.placeholder': 'contoh: budi@brnjuara.com'
       },
       en: {
         'Auth.form.welcome.subtitle': 'Lets login',
@@ -57,7 +58,8 @@ export default {
         'app.components.HomePage.welcome.again': 'BRN Web Admin',
         'app.components.HomePage.button.blog': ' ',
         'app.components.HomePage.welcomeBlock.content.again': 'Welcome back again',
-        'app.components.LeftMenu.navbrand.title': 'BRN Admin'
+        'app.components.LeftMenu.navbrand.title': 'BRN Admin',
+        'Auth.form.email.placeholder': 'ex: budi@brnjuara.com'
       }
     },
     // Disable video tutorials
