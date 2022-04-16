@@ -4,7 +4,8 @@
   "info": {
     "singularName": "produk",
     "pluralName": "produks",
-    "displayName": "Produk"
+    "displayName": "Produk",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,6 +27,16 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
