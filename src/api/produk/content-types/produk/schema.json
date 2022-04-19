@@ -12,31 +12,36 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "toko": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::toko.toko"
-    },
-    "kategori": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::kategori.kategori"
-    },
     "name": {
       "type": "string"
     },
     "price": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "kategoris": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kategori.kategori",
+      "inversedBy": "produks"
+    },
+    "toko": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::toko.toko"
+    },
+    "desc": {
+      "type": "text"
     }
   }
 }

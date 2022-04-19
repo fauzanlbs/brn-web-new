@@ -13,6 +13,12 @@
   "attributes": {
     "jenis": {
       "type": "string"
+    },
+    "produks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::produk.produk",
+      "mappedBy": "kategoris"
     }
   }
 }
