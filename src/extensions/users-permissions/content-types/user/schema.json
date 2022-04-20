@@ -81,12 +81,6 @@
     "rental_address": {
       "type": "text"
     },
-    "rental_lat": {
-      "type": "decimal"
-    },
-    "rental_long": {
-      "type": "decimal"
-    },
     "rental_logo": {
       "type": "media",
       "multiple": false,
@@ -122,6 +116,17 @@
         "videos",
         "audios"
       ]
+    },
+    "rental_latitude": {
+      "type": "string"
+    },
+    "rental_longitude": {
+      "type": "string"
+    },
+    "kota": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kota.kota"
     }
   }
 }

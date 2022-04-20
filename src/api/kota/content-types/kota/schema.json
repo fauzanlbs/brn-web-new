@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kotas",
+  "info": {
+    "singularName": "kota",
+    "pluralName": "kotas",
+    "displayName": "Kota"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "province_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::province.province"
+    },
+    "city_id": {
+      "type": "integer"
+    },
+    "city_name": {
+      "type": "string"
+    }
+  }
+}
